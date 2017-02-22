@@ -18,4 +18,8 @@ public class Figura
     {
         return area;
     }
+    void calculaArea()
+    {
+        System.out.println("UPPs!!" );  
+    }
 }
