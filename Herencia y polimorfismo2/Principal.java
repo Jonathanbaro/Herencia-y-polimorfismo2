@@ -29,7 +29,7 @@ public class Principal
         }
         for(Figura f:figuras)
         {
-            System.out.println("El area de la figura " + f + " es " + f.accedeArea());
+            System.out.println(f.dimeInfo());
         }
     }
 }

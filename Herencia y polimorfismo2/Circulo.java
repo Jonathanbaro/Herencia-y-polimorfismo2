@@ -20,5 +20,8 @@ public class Circulo extends Figura
     {
         area = (radio * radio) * pi;
     }
-    
+    public String dimeInfo()
+    {
+        return "Circulo " + super.dimeInfo();
+    }
 }
