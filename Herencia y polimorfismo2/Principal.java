@@ -23,14 +23,13 @@ public class Principal
         figuras[0] = t1;
         figuras[1] = c1;
         figuras[2] = ci1;
-        for(int i = 0; i<3; i++)
+        for(Figura f:figuras)
         {
-           figuras[i].calculaArea();
+            f.calculaArea();
         }
-        for(int i = 0; i<3; i++)
+        for(Figura f:figuras)
         {
-            System.out.println("El area de la figura " + i + " es " + figuras[i].accedeArea());
+            System.out.println("El area de la figura " + f + " es " + f.accedeArea());
         }
-        
     }
 }
