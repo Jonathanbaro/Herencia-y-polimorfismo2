@@ -29,7 +29,7 @@ public class Principal
         }
         for(Figura f:figuras)
         {
-            System.out.println(f.dimeInfo());
+            System.out.println(f);
         }
     }
 }
