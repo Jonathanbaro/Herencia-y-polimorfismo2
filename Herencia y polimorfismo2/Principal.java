@@ -17,19 +17,22 @@ public class Principal
         //c1.calculaArea();
         //System.out.println("El area del cuadrado es: " + c1.accedeArea());
         Circulo ci1 = new Circulo(9);
+        Circulo ci2 = new Circulo(9);
         //ci1.calculaArea();
         //System.out.println("El area del circulo es: " + ci1.accedeArea());
-        Figura [] figuras = new Figura[3];
+        Figura [] figuras = new Figura[4];
         figuras[0] = t1;
         figuras[1] = c1;
         figuras[2] = ci1;
-        for(Figura f:figuras)
+        figuras[3] = ci2;
+  
+        if(ci1.equals(ci2))
         {
-            f.calculaArea();
+            System.out.println("Iguales");
         }
-        for(Figura f:figuras)
+        else
         {
-            System.out.println(f);
+            System.out.println("Diferente");
         }
     }
 }
