@@ -26,7 +26,7 @@ public class Principal
         figuras[2] = ci1;
         figuras[3] = ci2;
   
-        if(ci1.equals(ci2))
+        if(ci1.equals(t1))
         {
             System.out.println("Iguales");
         }
