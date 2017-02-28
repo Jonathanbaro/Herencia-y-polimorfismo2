@@ -9,30 +9,11 @@ public class Principal
 {
     public static void main(String [] args)
     {
-
+        Ventana vent = new Ventana(800, 600);
+        vent.setVisible(true);
+        
         Triangulo t1 = new Triangulo(3,4);
-        //t1.calculaArea();
-        //System.out.println("El area del triangulo es: " + t1.accedeArea());
         Cuadrado c1 = new Cuadrado(4);
-        //c1.calculaArea();
-        //System.out.println("El area del cuadrado es: " + c1.accedeArea());
         Circulo ci1 = new Circulo(9);
-        Circulo ci2 = new Circulo(9);
-        //ci1.calculaArea();
-        //System.out.println("El area del circulo es: " + ci1.accedeArea());
-        Figura [] figuras = new Figura[4];
-        figuras[0] = t1;
-        figuras[1] = c1;
-        figuras[2] = ci1;
-        figuras[3] = ci2;
-  
-        if(ci1.equals(t1))
-        {
-            System.out.println("Iguales");
-        }
-        else
-        {
-            System.out.println("Diferente");
-        }
     }
 }
