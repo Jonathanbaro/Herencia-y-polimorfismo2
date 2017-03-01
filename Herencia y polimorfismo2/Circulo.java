@@ -34,7 +34,6 @@ public class Circulo extends Figura
     {
         if(obj instanceof Circulo)
             return this.radio == ((Circulo)obj).radio;
-
         else
             return false;
     }
