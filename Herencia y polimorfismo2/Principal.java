@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 /**
  * Write a description of class Principal here.
  * 
@@ -11,9 +11,5 @@ public class Principal
     {
         Ventana vent = new Ventana(800, 600);
         vent.setVisible(true);
-        
-        Triangulo t1 = new Triangulo(3,4);
-        Cuadrado c1 = new Cuadrado(4);
-        Circulo ci1 = new Circulo(9);
     }
 }

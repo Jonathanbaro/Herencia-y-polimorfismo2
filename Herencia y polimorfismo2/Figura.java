@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract  class Figura
+public abstract class Figura
 {
     protected float area;
     private int posx;
@@ -19,9 +19,18 @@ public abstract  class Figura
         posy = y;
     }
     
+    public abstract void dibuja(Graphics g);
+    
+    
+    /*
     public float accedeArea()
     {
         return area;
+    }
+    @Override   
+    public boolean equals(Object obj)
+    {
+        return this.area == ((Figura)obj).area;
     }
     void calculaArea()
     {
@@ -35,11 +44,6 @@ public abstract  class Figura
     public String toString()
     {
         return " " + area;
-    }
-    @Override   
-    public boolean equals(Object obj)
-    {
-        return this.area == ((Figura)obj).area;
-    }
-    public abstract void dibuja(Graphics g);
+    }*/
+
 }
