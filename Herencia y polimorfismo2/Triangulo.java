@@ -8,18 +8,21 @@ import java.awt.Graphics2D;
  */
 public class Triangulo extends Figura
 {
-   private float base;
-   private float altura;
+   private int base;
+   private int altura;
     
-    public Triangulo(float b, float a, int x, int y)
+    public Triangulo(int b, int a, int x, int y)
    {
         super(x, y);
         base = b;
         altura = a;
    }
+   @Override
    public void dibuja(Graphics g)
    {
-       g.drawLine(x, y, x+a, y+b);
+       g.drawLine(100, 350, (100+base), 350);
+       g.drawLine(100+(base/2), (350-altura), 100, 350);
+       g.drawLine(100+(base/2),(350-altura), (100+base), 350);
    }
     
     

@@ -1,21 +1,21 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-/**
- * Write a description of class Cuadrado here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Cuadrado extends Figura
 {
-    private float lado;
+    private int lado;
     
-    public Cuadrado(float l)
+    public Cuadrado(int l, int x, int y)
     {
+        super(x, y);
         lado = l;
     }
-    
-    public void calculaArea()
+    @Override
+    public void dibuja(Graphics g)
+    {
+        g.drawRect(100, 100, lado, lado);
+    }
+    /*public void calculaArea()
     {
         area = lado * lado;
     }
@@ -27,5 +27,5 @@ public class Cuadrado extends Figura
     public String toString()
     {
         return "Cuadrado con area = " + super.toString();
-    }
+    }*/
 }

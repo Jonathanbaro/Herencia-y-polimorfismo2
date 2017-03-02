@@ -8,15 +8,18 @@ import java.awt.Graphics2D;
  */
 public class Circulo extends Figura
 {
-    private float radio;
-    private float pi;
+    private int radio;
         
-    public Circulo(float r)
+    public Circulo(int r, int x, int y)
     {
+        super(x, y);
         radio = r;
-        pi = 3.1416f;
     }
-    
+   public void dibuja(Graphics g)
+   {
+       g.drawOval(100, 210, radio, radio);
+    }
+    /*
     public void calculaArea()
     {
         area = (radio * radio) * pi;
@@ -37,5 +40,5 @@ public class Circulo extends Figura
             return this.radio == ((Circulo)obj).radio;
         else
             return false;
-    }
+    }*/
 }
