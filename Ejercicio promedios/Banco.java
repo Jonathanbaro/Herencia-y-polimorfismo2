@@ -19,11 +19,11 @@ public class Banco
     public float calcularSaldoPromedio()
     {
         float aux=0;
-        float saldo=0;
         for(CuentaBancaria cA : cuentas)
         {
-            //aux+=cA.
+            aux+=cA.rsaldo();
         }  
-        return saldo;
+        return aux/cuentas.size();
     }
+    
 }

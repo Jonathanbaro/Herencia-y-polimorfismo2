@@ -10,6 +10,13 @@ public class Planeta
     {
         paises.add(p1);
     }
-
-
+    public float calcularHaPromedio()
+    {
+        float aux=0;
+        for(Pais pA : paises)
+        {
+            aux+=pA.rHabitantes();
+        }  
+        return aux/paises.size();
+    }
 }

@@ -6,4 +6,8 @@ public class CuentaBancaria
     {
         saldo = x;
     }
+    public int rsaldo()
+    {
+        return saldo;
+    }
 }
