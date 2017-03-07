@@ -18,12 +18,14 @@ public class Banco
     }
     public float calcularSaldoPromedio()
     {
-        float aux=0;
-        for(CuentaBancaria cA : cuentas)
+        CuentaBancaria[] arrCuentas;
+        arrCuentas = new CuentaBancaria[cuentas.size()];
+        for(int i=0; i<cuentas.size(); i++)
         {
-            aux+=cA.rsaldo();
-        }  
-        return aux/cuentas.size();
+            arrCuentas[i] = cuentas.get(i);
+        }
+        arrCuentas = cuentas.toArray(arrCuentas);
+        return Utileria.calculaPromedio(arrCuentas);
     }
     
 }

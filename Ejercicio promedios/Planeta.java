@@ -12,11 +12,13 @@ public class Planeta
     }
     public float calcularHaPromedio()
     {
-        float aux=0;
-        for(Pais pA : paises)
+        Pais[] arrPaises;
+        arrPaises = new Pais[paises.size()];
+        for(int i=0; i<paises.size(); i++)
         {
-            aux+=pA.rHabitantes();
-        }  
-        return aux/paises.size();
+            arrPaises[i] = paises.get(i);
+        }
+        arrPaises = paises.toArray(arrPaises);
+        return Utileria.calculaPromedio(arrPaises);
     }
 }
