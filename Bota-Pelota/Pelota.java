@@ -17,4 +17,8 @@ public class Pelota
     {
         g.drawOval(posx, posy, radio*2, radio*2);
     }
+    public void mueve(Graphics g)
+    {
+        g.drawOval(posx+50, posy+50, radio*2, radio*2);
+    }
 }
